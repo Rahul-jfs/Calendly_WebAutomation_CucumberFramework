@@ -1,0 +1,546 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 04 17:46:13 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>579 seconds (579162 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can change the profile picture", "Profile Picture upload"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/ProfilePictureUpload.feature:6)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641880637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641880637'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/ProfilePictureUpload.feature:6)
+</pre></div></td>
+<td>11</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the first 2 holidays are removed", "Remove Holidays from the calender"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 6ca48202532864dc2d6068a4762d0525
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace128654041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128654041'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 6ca48202532864dc2d6068a4762d0525
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+</pre></div></td>
+<td>9</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can logout", "Logout Functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 66fe75ee6ef681c872ab11a70c501f72
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at com.automation.pages.LandingPage.isLandingPageDisplayed(LandingPage.java:21)
+	at com.automation.steps.LandingSteps.verifyIsOnLandingPage(LandingSteps.java:24)
+	at ?.verify is on landing page(file:///C:/Capstone2/src/test/resources/features/Logout.feature:17)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177589009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177589009'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 66fe75ee6ef681c872ab11a70c501f72
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at com.automation.pages.LandingPage.isLandingPageDisplayed(LandingPage.java:21)
+	at com.automation.steps.LandingSteps.verifyIsOnLandingPage(LandingSteps.java:24)
+	at ?.verify is on landing page(file:///C:/Capstone2/src/test/resources/features/Logout.feature:17)
+</pre></div></td>
+<td>35</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can create group event", "Event creation functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: d52f758dc5cc938993b1c5365e468b60
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/CreateEvent.feature:5)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace641011362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace641011362'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: d52f758dc5cc938993b1c5365e468b60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/CreateEvent.feature:5)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the profile image, name and welcome message is updated", "Update Profile Functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 179373c6f9c4668a4156b01b2e7e479b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/UpdateProfile.feature:6)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199344266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199344266'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 179373c6f9c4668a4156b01b2e7e479b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/UpdateProfile.feature:6)
+</pre></div></td>
+<td>10</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the first 2 holidays are removed", "Remove Holidays from the calender"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 1c4e6c1af206f25894cc96740cf099a6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1499383906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1499383906'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]
+Session ID: 1c4e6c1af206f25894cc96740cf099a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at ?.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+</pre></div></td>
+<td>9</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can create a routing", "Create Routing Functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -&gt; xpath: //div[@data-component=&apos;sticky-footer&apos;]//button/span[text()=&apos;Next&apos;]]
+Session ID: 3b7980beece22d66d8a42a6deb325eef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.automation.pages.RoutingPage.clickOnNextButton(RoutingPage.java:132)
+	at com.automation.steps.RoutingPageSteps.user_clicks_on_next_button_of_routing_page(RoutingPageSteps.java:83)
+	at ?.user clicks on next button of routing page(file:///C:/Capstone2/src/test/resources/features/CreateRounting.feature:27)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70482685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70482685'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -&gt; xpath: //div[@data-component=&apos;sticky-footer&apos;]//button/span[text()=&apos;Next&apos;]]
+Session ID: 3b7980beece22d66d8a42a6deb325eef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.automation.pages.RoutingPage.clickOnNextButton(RoutingPage.java:132)
+	at com.automation.steps.RoutingPageSteps.user_clicks_on_next_button_of_routing_page(RoutingPageSteps.java:83)
+	at ?.user clicks on next button of routing page(file:///C:/Capstone2/src/test/resources/features/CreateRounting.feature:27)
+</pre></div></td>
+<td>33</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the event is deleted", "Delete event functionality"</td>
+<td></td>
+<td>36</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify an event is scheduled", "Schedule an event/meeting functionality"</td>
+<td></td>
+<td>38</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "cancel event", "Schedule an event/meeting functionality"</td>
+<td></td>
+<td>59</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating a contact", "Testing of CreateContact feature"</td>
+<td></td>
+<td>36</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can delete a routing form", "Delete Routing Functionality"</td>
+<td></td>
+<td>35</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing open website with invalid credentials", "Testing Calendly"</td>
+<td></td>
+<td>17</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing open website", "Testing Calendly"</td>
+<td></td>
+<td>34</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing open website with invalid credentials", "Testing Calendly"</td>
+<td></td>
+<td>24</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Editing a contact", "Testing of EditContact feature"</td>
+<td></td>
+<td>36</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can create one-on-one event", "Event creation functionality"</td>
+<td></td>
+<td>39</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can download the meetings scheduled", "Download schedules / meetings event Functionality"</td>
+<td></td>
+<td>33</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deleting a contact", "Testing of DeleteContact feature"</td>
+<td></td>
+<td>25</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+<tr>
+<td title='com.automation.Runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.Runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify user can create collective event", "Event creation functionality"</td>
+<td></td>
+<td>39</td>
+<td>com.automation.Runner.TestNGRunner@49c386c8</td></tr>
+</table><p>
+</body>
+</html>

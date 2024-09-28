@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.automation.Runner.TestNGRunner" time="579.958" tests="20" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Capstone2\target\test-classes;C:\Capstone2\target\classes;C:\Users\280707\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\280707\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\280707\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\280707\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\280707\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\280707\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\280707\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-testng\7.18.1\cucumber-testng-7.18.1.jar;C:\Users\280707\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\280707\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\280707\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\280707\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\280707\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\280707\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\280707\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\280707\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\280707\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\280707\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\280707\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\280707\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\280707\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\280707\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\280707\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\280707\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\jdk-17_windows-x64_bin\jdk-17.0.12\bin"/>
+    <property name="sun.java.command" value="C:\Users\280707\AppData\Local\Temp\surefire10257421740631599637\surefirebooter699728000488879066.jar C:\Users\280707\AppData\Local\Temp\surefire10257421740631599637 2024-09-04T17-46-11_308-jvmRun1 surefire5352900544790173741tmp surefire_03912297321087457253tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Capstone2\target\test-classes;C:\Capstone2\target\classes;C:\Users\280707\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\280707\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\280707\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\280707\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\280707\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\280707\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\280707\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\280707\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\280707\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\280707\.m2\repository\io\cucumber\cucumber-testng\7.18.1\cucumber-testng-7.18.1.jar;C:\Users\280707\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\280707\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\280707\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\280707\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\280707\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\280707\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\280707\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\280707\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\280707\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\280707\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\280707\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\280707\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\280707\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\280707\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\280707\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\280707\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\280707\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\280707\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\280707"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\jdk-17_windows-x64_bin\jdk-17.0.12"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Capstone2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\280707\AppData\Local\Temp\surefire10257421740631599637\surefirebooter699728000488879066.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="280707"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\280707\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\280707\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.1.4"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Capstone2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\jdk-17_windows-x64_bin\jdk-17.0.12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Windows\CCM;C:\Windows\CCM;C:\Users\280707\AppData\Local\Microsoft\WindowsApps;C:\jdk-17_windows-x64_bin\jdk-17.0.12\bin;C:\apache-maven-3.9.8-bin\apache-maven-3.9.8\bin;C:\Git\cmd;C:\allure-2.30.0\allure-2.30.0\bin;C:\Users\280707\AppData\Local\Programs\Microsoft VS Code\bin;C:\sdk-tools-windows-4333796\tools\bin;C:\node-v20.16.0-win-x64\node-v20.16.0-win-x64;C:\Users\280707\AppData\Local\Android\Sdk\platform-tools;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Creating a contact&quot;, &quot;Testing of CreateContact feature&quot;](1)" classname="com.automation.Runner.TestNGRunner" time="36.523">
+    <system-out><![CDATA[
+Scenario: Creating a contact                                                            &amp#27;[90m# src/test/resources/features/CreateContact.feature:2&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                              &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                         &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                        &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                                 &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                           &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                                &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                        &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser navigates to the Add to Contacts section&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.ContactSteps.user_navigates_to_the_section()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on the Add to Contacts icon&amp#27;[0m                                          &amp#27;[90m# com.automation.steps.ContactSteps.user_clicks_on_the_add_to_contacts_icon()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the Add Contact form is displayed&amp#27;[0m                                         &amp#27;[90m# com.automation.steps.ContactSteps.verify_the_add_contact_form_is_displayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.firstname"&amp#27;[0m&amp#27;[32m as the first name for the contact&amp#27;[0m                &amp#27;[90m# com.automation.steps.ContactSteps.user_enters_as_the_first_name_for_the_contact(java.lang.String)&amp#27;[0m
+Property contact.email has been written to the file.
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.email"&amp#27;[0m&amp#27;[32m as the email for the contact&amp#27;[0m                          &amp#27;[90m# com.automation.steps.ContactSteps.user_enters_as_the_email_for_the_contact(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser selects &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.timezone"&amp#27;[0m&amp#27;[32m as the timezone for the contact&amp#27;[0m                   &amp#27;[90m# com.automation.steps.ContactSteps.user_selects_as_the_timezone_for_the_contact(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.phoneNo"&amp#27;[0m&amp#27;[32m as the phone number for the contact&amp#27;[0m                 &amp#27;[90m# com.automation.steps.ContactSteps.user_enters_as_the_phone_number_for_the_contact(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on the Save Contact button&amp#27;[0m                                            &amp#27;[90m# com.automation.steps.ContactSteps.user_clicks_on_the_button()&amp#27;[0m
+John
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the contact &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.firstname"&amp#27;[0m&amp#27;[32m is successfully added to the contact list&amp#27;[0m &amp#27;[90m# com.automation.steps.ContactSteps.verify_the_contact_is_successfully_added_to_the_contact_list(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sep 04, 2024 5:46:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can create one-on-one event&quot;, &quot;Event creation functionality&quot;](2)" classname="com.automation.Runner.TestNGRunner" time="39.966">
+    <system-out><![CDATA[
+Scenario: verify user can create one-on-one event                                  &amp#27;[90m# src/test/resources/features/CreateEvent.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                         &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                    &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                            &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                      &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                           &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                              &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on new event type button&amp#27;[0m                                        &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnNewEventTypeButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify new event type page is displayed&amp#27;[0m                                     &amp#27;[90m# com.automation.steps.NewEventSteps.verifyNewEventTypePageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser choose the event type &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventType.one"&amp#27;[0m                                  &amp#27;[90m# com.automation.steps.NewEventSteps.userChooseTheEventType(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on next button&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.NewEventSteps.userClicksOnNextButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters event name &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m&amp#27;[32m and duration &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.duration"&amp#27;[0m      &amp#27;[90m# com.automation.steps.NewEventSteps.userEntersEventNameAndDuration(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on continue Button&amp#27;[0m                                                    &amp#27;[90m# com.automation.steps.NewEventSteps.clicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify new Event is ready message is displayed&amp#27;[0m                              &amp#27;[90m# com.automation.steps.NewEventSteps.verifyNewEventIsReadyMessageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on done button&amp#27;[0m                                                  &amp#27;[90m# com.automation.steps.NewEventSteps.userClicksOnDoneButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify event &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.duration"&amp#27;[0m&amp#27;[32m is listed on home page&amp#27;[0m &amp#27;[90m# com.automation.steps.HomeSteps.verifyEventAndIsListedOnHomePage(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:46:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can create group event&quot;, &quot;Event creation functionality&quot;](3)" classname="com.automation.Runner.TestNGRunner" time="10.72">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: d52f758dc5cc938993b1c5365e468b60" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: d52f758dc5cc938993b1c5365e468b60
+]]></failure>
+    <system-out><![CDATA[
+Scenario: verify user can create group event                                       &amp#27;[90m# src/test/resources/features/CreateEvent.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                         &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on loginLink&amp#27;[0m                                                    &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: d52f758dc5cc938993b1c5365e468b60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at âœ½.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/CreateEvent.feature:5)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289841 bytes]
+
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user on login page&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters email as &amp#27;[0m&amp#27;[36m&amp#27;[1m"userEmail"&amp#27;[0m                                            &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on loginBtn&amp#27;[0m                                                      &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"password"&amp#27;[0m                                           &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on continue button&amp#27;[0m                                              &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mverify user is on homepage&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on new event type button&amp#27;[0m                                        &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnNewEventTypeButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify new event type page is displayed&amp#27;[0m                                     &amp#27;[90m# com.automation.steps.NewEventSteps.verifyNewEventTypePageIsDisplayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser choose the event type &amp#27;[0m&amp#27;[36m&amp#27;[1m"eventType.group"&amp#27;[0m                                &amp#27;[90m# com.automation.steps.NewEventSteps.userChooseTheEventType(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on next button&amp#27;[0m                                                   &amp#27;[90m# com.automation.steps.NewEventSteps.userClicksOnNextButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters event name &amp#27;[0m&amp#27;[36m&amp#27;[1m"newEvent.name"&amp#27;[0m&amp#27;[36m and duration &amp#27;[0m&amp#27;[36m&amp#27;[1m"newEvent.duration"&amp#27;[0m      &amp#27;[90m# com.automation.steps.NewEventSteps.userEntersEventNameAndDuration(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on continue Button&amp#27;[0m                                                    &amp#27;[90m# com.automation.steps.NewEventSteps.clicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify new Event is ready message is displayed&amp#27;[0m                              &amp#27;[90m# com.automation.steps.NewEventSteps.verifyNewEventIsReadyMessageIsDisplayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on done button&amp#27;[0m                                                  &amp#27;[90m# com.automation.steps.NewEventSteps.userClicksOnDoneButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify event &amp#27;[0m&amp#27;[36m&amp#27;[1m"newEvent.name"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"newEvent.duration"&amp#27;[0m&amp#27;[36m is listed on home page&amp#27;[0m &amp#27;[90m# com.automation.steps.HomeSteps.verifyEventAndIsListedOnHomePage(java.lang.String,java.lang.String)&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289446 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:47:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can create collective event&quot;, &quot;Event creation functionality&quot;](4)" classname="com.automation.Runner.TestNGRunner" time="39.34">
+    <system-out><![CDATA[
+Scenario: verify user can create collective event        &amp#27;[90m# src/test/resources/features/CreateEvent.feature:33&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                               &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                          &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                         &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                            &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                 &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                    &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                         &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on new event type button&amp#27;[0m              &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnNewEventTypeButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify new event type page is displayed&amp#27;[0m           &amp#27;[90m# com.automation.steps.NewEventSteps.verifyNewEventTypePageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser choose the event type &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventType.collective"&amp#27;[0m &amp#27;[90m# com.automation.steps.NewEventSteps.userChooseTheEventType(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on invite users button&amp#27;[0m                 &amp#27;[90m# com.automation.steps.InvitePageSteps.userClicksOnInviteUsersButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters invite emails &amp#27;[0m&amp#27;[32m&amp#27;[1m"invite.email"&amp#27;[0m           &amp#27;[90m# com.automation.steps.InvitePageSteps.userEntersInviteEmails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on set roles&amp#27;[0m                                &amp#27;[90m# com.automation.steps.InvitePageSteps.clicksOnSetRoles()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on send invitation&amp#27;[0m                          &amp#27;[90m# com.automation.steps.InvitePageSteps.clicksOnSendInvitation()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify invitations are sent&amp#27;[0m                       &amp#27;[90m# com.automation.steps.InvitePageSteps.verifyInvitationsAreSent()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:47:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can create a routing&quot;, &quot;Create Routing Functionality&quot;](5)" classname="com.automation.Runner.TestNGRunner" time="33.882">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -&gt; xpath: //div[@data-component=&apos;sticky-footer&apos;]//button/span[text()=&apos;Next&apos;]]&#10;Session ID: 3b7980beece22d66d8a42a6deb325eef" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -> xpath: //div[@data-component='sticky-footer']//button/span[text()='Next']]
+Session ID: 3b7980beece22d66d8a42a6deb325eef
+]]></failure>
+    <system-out><![CDATA[
+Scenario: verify user can create a routing              &amp#27;[90m# src/test/resources/features/CreateRounting.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                              &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                         &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                        &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                 &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                   &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                        &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on routing link&amp#27;[0m                      &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnRoutingLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify routing page is displayed&amp#27;[0m                 &amp#27;[90m# com.automation.steps.RoutingPageSteps.verifyRoutingPageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on new routing form button&amp#27;[0m           &amp#27;[90m# com.automation.steps.RoutingPageSteps.userClicksOnNewRoutingFormButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on create new form&amp#27;[0m                         &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicksOnCreateNewForm()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify routing popup is displayed&amp#27;[0m                &amp#27;[90m# com.automation.steps.RoutingPageSteps.verifyRoutingPopupIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters routing form name as &amp#27;[0m&amp#27;[32m&amp#27;[1m"routing.name"&amp#27;[0m  &amp#27;[90m# com.automation.steps.RoutingPageSteps.user_enters_routing_form_name_as(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on create form&amp#27;[0m                             &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicks_on_create_form()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on Add a question&amp#27;[0m                     &amp#27;[90m# com.automation.steps.RoutingPageSteps.user_clicks_on_add_a_question()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselects name and perform click&amp#27;[0m                    &amp#27;[90m# com.automation.steps.RoutingPageSteps.selects_name_and_perform_click()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser writes a question for name &amp#27;[0m&amp#27;[32m&amp#27;[1m"name.question"&amp#27;[0m   &amp#27;[90m# com.automation.steps.RoutingPageSteps.user_writes_a_questionForName(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on save button&amp#27;[0m                             &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicks_on_save_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on Add a question&amp#27;[0m                     &amp#27;[90m# com.automation.steps.RoutingPageSteps.user_clicks_on_add_a_question()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselects email and perform click&amp#27;[0m                   &amp#27;[90m# com.automation.steps.RoutingPageSteps.selectsEmailAndPerformClick()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser writes a question for email &amp#27;[0m&amp#27;[32m&amp#27;[1m"email.question"&amp#27;[0m &amp#27;[90m# com.automation.steps.RoutingPageSteps.userWritesAQuestionForEmail(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on save button&amp#27;[0m                             &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicks_on_save_button()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on next button of routing page&amp#27;[0m       &amp#27;[90m# com.automation.steps.RoutingPageSteps.user_clicks_on_next_button_of_routing_page()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -> xpath: //div[@data-component='sticky-footer']//button/span[text()='Next']]
+Session ID: 3b7980beece22d66d8a42a6deb325eef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.automation.pages.RoutingPage.clickOnNextButton(RoutingPage.java:132)
+	at com.automation.steps.RoutingPageSteps.user_clicks_on_next_button_of_routing_page(RoutingPageSteps.java:83)
+	at âœ½.user clicks on next button of routing page(file:///C:/Capstone2/src/test/resources/features/CreateRounting.feature:27)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 98347 bytes]
+
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on publish button&amp#27;[0m                          &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicks_on_publish_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify copy routing link popup is displayed&amp#27;[0m      &amp#27;[90m# com.automation.steps.RoutingPageSteps.verify_copy_routing_link_popup_is_displayed()&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 98347 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:48:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Deleting a contact&quot;, &quot;Testing of DeleteContact feature&quot;](6)" classname="com.automation.Runner.TestNGRunner" time="25.555">
+    <system-out><![CDATA[
+Scenario: Deleting a contact                                                                 &amp#27;[90m# src/test/resources/features/DeleteContact.feature:2&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                                   &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                              &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                             &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                                      &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                                &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                                     &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                                        &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                             &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser navigates to the Add to Contacts section&amp#27;[0m                                        &amp#27;[90m# com.automation.steps.ContactSteps.user_navigates_to_the_section()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on remove button of &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.firstname"&amp#27;[0m&amp#27;[32m with email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.email"&amp#27;[0m     &amp#27;[90m# com.automation.steps.ContactSteps.userClicksOnRemoveButtonOf(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mVerify contact with name &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.firstname"&amp#27;[0m&amp#27;[32m and  email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.email"&amp#27;[0m&amp#27;[32m is removed&amp#27;[0m &amp#27;[90m# com.automation.steps.ContactSteps.verifyContactWithNameAndEmailAsIsRemoved(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:48:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify the event is deleted&quot;, &quot;Delete event functionality&quot;](7)" classname="com.automation.Runner.TestNGRunner" time="36.735">
+    <system-out><![CDATA[
+Scenario: verify the event is deleted                       &amp#27;[90m# src/test/resources/features/DeleteExistingEvent.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                  &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                             &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                            &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                               &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                    &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                       &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                            &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser deletes the event of name &amp#27;[0m&amp#27;[32m&amp#27;[1m"delete.eventName"&amp#27;[0m    &amp#27;[90m# com.automation.steps.HomeSteps.userDeletesTheEventOfNameAndDuration(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify events are deleted of name &amp#27;[0m&amp#27;[32m&amp#27;[1m"delete.eventName"&amp#27;[0m &amp#27;[90m# com.automation.steps.HomeSteps.verifyEventsAreDeletedOfName(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:49:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify user can delete a routing form&quot;, &quot;Delete Routing Functionality&quot;](8)" classname="com.automation.Runner.TestNGRunner" time="35.287">
+    <system-out><![CDATA[
+Scenario: Verify user can delete a routing form              &amp#27;[90m# src/test/resources/features/DeleteRouting.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                              &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                             &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                      &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                        &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                             &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on routing link&amp#27;[0m                           &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnRoutingLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify routing page is displayed&amp#27;[0m                      &amp#27;[90m# com.automation.steps.RoutingPageSteps.verifyRoutingPageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on options of routing name &amp#27;[0m&amp#27;[32m&amp#27;[1m"routing.name"&amp#27;[0m &amp#27;[90m# com.automation.steps.RoutingPageSteps.userClicksOnOptionsOfRoutingName(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on delete option&amp#27;[0m                                &amp#27;[90m# com.automation.steps.RoutingPageSteps.clicksOnDeleteOption()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify delete confirmation popup is displayed&amp#27;[0m         &amp#27;[90m# com.automation.steps.RoutingPageSteps.verifyDeleteConfirmationPopupIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on confirm delete button&amp#27;[0m                  &amp#27;[90m# com.automation.steps.RoutingPageSteps.userClicksOnConfirmDeleteButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify routing form &amp#27;[0m&amp#27;[32m&amp#27;[1m"routing.name"&amp#27;[0m&amp#27;[32m is deleted&amp#27;[0m         &amp#27;[90m# com.automation.steps.RoutingPageSteps.verifyRoutingFormIsDeleted(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:49:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify user can download the meetings scheduled&quot;, &quot;Download schedules / meetings event Functionality&quot;](9)" classname="com.automation.Runner.TestNGRunner" time="33.277">
+    <system-out><![CDATA[
+Scenario: Verify user can download the meetings scheduled &amp#27;[90m# src/test/resources/features/DownloadContent.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                          &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                   &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                             &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                          &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on meetings link&amp#27;[0m                       &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnMeetingsLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify meetings page is displayed&amp#27;[0m                  &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyMeetingsPageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on export button&amp#27;[0m                       &amp#27;[90m# com.automation.steps.MeetingsPageSteps.userClicksOnExportButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify file is downloaded&amp#27;[0m                          &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyFileIsDownloaded()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:50:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Editing a contact&quot;, &quot;Testing of EditContact feature&quot;](10)" classname="com.automation.Runner.TestNGRunner" time="36.61">
+    <system-out><![CDATA[
+Scenario: Editing a contact                                                                                                   &amp#27;[90m# src/test/resources/features/EditContact.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                                                                    &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                                                               &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                                                              &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                                                                       &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                                                                 &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                                                                      &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                                                                         &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                                                              &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser navigates to the Add to Contacts section&amp#27;[0m                                                                         &amp#27;[90m# com.automation.steps.ContactSteps.user_navigates_to_the_section()&amp#27;[0m
+contact does not exist
+(//tr[@class='r15404cu'])[1]/td[6]//button[@aria-label='Contact Actions Button']
+true
+befor first name 
+after first name
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser edits  &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.firstname"&amp#27;[0m&amp#27;[32m to &amp#27;[0m&amp#27;[32m&amp#27;[1m"edit.firstname"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.phoneNo"&amp#27;[0m&amp#27;[32m to &amp#27;[0m&amp#27;[32m&amp#27;[1m"edit.phoneNo"&amp#27;[0m&amp#27;[32m with email &amp#27;[0m&amp#27;[32m&amp#27;[1m"contact.email"&amp#27;[0m &amp#27;[90m# com.automation.steps.ContactSteps.userEditsToAndToWithEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on the Save Contact button&amp#27;[0m                                                                                  &amp#27;[90m# com.automation.steps.ContactSteps.user_clicks_on_the_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the contact &amp#27;[0m&amp#27;[32m&amp#27;[1m"edit.firstname"&amp#27;[0m&amp#27;[32m is successfully edited&amp#27;[0m                                                             &amp#27;[90m# com.automation.steps.ContactSteps.verifyTheContactIsSuccessfullyEdited(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:51:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Testing open website&quot;, &quot;Testing Calendly&quot;](11)" classname="com.automation.Runner.TestNGRunner" time="34.655">
+    <system-out><![CDATA[
+Scenario: Testing open website           &amp#27;[90m# src/test/resources/features/Login.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m               &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m          &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m         &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m            &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m    &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m         &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:51:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Testing open website with invalid credentials&quot;, &quot;Testing Calendly&quot;](12)" classname="com.automation.Runner.TestNGRunner" time="17.311">
+    <system-out><![CDATA[
+Scenario Outline: Testing open website with invalid credentials &amp#27;[90m# src/test/resources/features/Login.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                      &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                 &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"john.doe123@example.com"&amp#27;[0m           &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on not able to login&amp#27;[0m                       &amp#27;[90m# com.automation.steps.LoginSteps.verifyUserIsOnNotAbleToLogin()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:52:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Testing open website with invalid credentials&quot;, &quot;Testing Calendly&quot;](13)" classname="com.automation.Runner.TestNGRunner" time="24.048">
+    <system-out><![CDATA[
+Scenario Outline: Testing open website with invalid credentials &amp#27;[90m# src/test/resources/features/Login.feature:25&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                      &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                 &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"jane.smith456@testmail.com"&amp#27;[0m        &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on not able to login&amp#27;[0m                       &amp#27;[90m# com.automation.steps.LoginSteps.verifyUserIsOnNotAbleToLogin()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:52:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can logout&quot;, &quot;Logout Functionality&quot;](14)" classname="com.automation.Runner.TestNGRunner" time="35.829">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: 66fe75ee6ef681c872ab11a70c501f72" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 66fe75ee6ef681c872ab11a70c501f72
+]]></failure>
+    <system-out><![CDATA[
+Scenario: verify user can logout         &amp#27;[90m# src/test/resources/features/Logout.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m               &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m          &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m         &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m            &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m    &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m         &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on profile icon&amp#27;[0m       &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnProfileIcon()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on profile link&amp#27;[0m             &amp#27;[90m# com.automation.steps.HomeSteps.clicksOnProfileLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify profile page is displayed&amp#27;[0m  &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyProfilePageIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on logout link&amp#27;[0m        &amp#27;[90m# com.automation.steps.ProfilePageSteps.userClicksOnLogoutLink()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mverify is on landing page&amp#27;[0m         &amp#27;[90m# com.automation.steps.LandingSteps.verifyIsOnLandingPage()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 66fe75ee6ef681c872ab11a70c501f72
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at com.automation.pages.LandingPage.isLandingPageDisplayed(LandingPage.java:21)
+	at com.automation.steps.LandingSteps.verifyIsOnLandingPage(LandingSteps.java:24)
+	at âœ½.verify is on landing page(file:///C:/Capstone2/src/test/resources/features/Logout.feature:17)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 272168 bytes]
+
+
+    Embedding FailedTestSnap [image/png 272216 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:53:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify user can change the profile picture&quot;, &quot;Profile Picture upload&quot;](15)" classname="com.automation.Runner.TestNGRunner" time="11.096">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660
+]]></failure>
+    <system-out><![CDATA[
+Scenario: verify user can change the profile picture &amp#27;[90m# src/test/resources/features/ProfilePictureUpload.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on loginLink&amp#27;[0m                      &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at âœ½.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/ProfilePictureUpload.feature:6)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 278169 bytes]
+
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user on login page&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters email as &amp#27;[0m&amp#27;[36m&amp#27;[1m"userEmail"&amp#27;[0m              &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on loginBtn&amp#27;[0m                        &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"password"&amp#27;[0m             &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on continue button&amp#27;[0m                &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mverify user is on homepage&amp#27;[0m                     &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on profile icon&amp#27;[0m                   &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnProfileIcon()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on profile link&amp#27;[0m                         &amp#27;[90m# com.automation.steps.HomeSteps.clicksOnProfileLink()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify profile page is displayed&amp#27;[0m              &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyProfilePageIsDisplayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser selects profile as &amp#27;[0m&amp#27;[36m&amp#27;[1m"gorilla.profileImg"&amp#27;[0m  &amp#27;[90m# com.automation.steps.ProfilePageSteps.userSelectsProfileAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify profile is changed&amp#27;[0m                     &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyProfileIsChanged()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on save changes button&amp#27;[0m            &amp#27;[90m# com.automation.steps.ProfilePageSteps.userClicksOnSaveChangesButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify changes have been saved&amp#27;[0m                &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyChangesHaveBeenSaved()&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 277875 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:53:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the first 2 holidays are removed&quot;, &quot;Remove Holidays from the calender&quot;](16)" classname="com.automation.Runner.TestNGRunner" time="9.209">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: 6ca48202532864dc2d6068a4762d0525" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 6ca48202532864dc2d6068a4762d0525
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Verify the first 2 holidays are removed &amp#27;[90m# src/test/resources/features/RemoveHolidays.feature:26&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on loginLink&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 6ca48202532864dc2d6068a4762d0525
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at âœ½.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289828 bytes]
+
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user on login page&amp#27;[0m                          &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters email as &amp#27;[0m&amp#27;[36m&amp#27;[1m"userEmail"&amp#27;[0m                   &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on loginBtn&amp#27;[0m                             &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"password"&amp#27;[0m                  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on continue button&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mverify user is on homepage&amp#27;[0m                          &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on availability&amp#27;[0m                        &amp#27;[90m# com.automation.steps.HomeSteps.user_clicks_on_availability()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user is on Availability page&amp#27;[0m                &amp#27;[90m# com.automation.steps.AvailabilityPageSteps.verify_user_is_on_availability_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser click on holidays tab&amp#27;[0m                         &amp#27;[90m# com.automation.steps.AvailabilityPageSteps.user_click_on_holidays_tab()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on change link&amp#27;[0m                               &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_change_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify holiday setting is displayed&amp#27;[0m                &amp#27;[90m# com.automation.steps.HolidaysPageSteps.verify_holiday_setting_is_displayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on countries list button&amp#27;[0m               &amp#27;[90m# com.automation.steps.HolidaysPageSteps.user_clicks_on_countries_list_button()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on country &amp#27;[0m&amp#27;[36m&amp#27;[1m"Germany"&amp#27;[0m                         &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_country(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on apply button&amp#27;[0m                              &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_apply_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify holidays of country &amp#27;[0m&amp#27;[36m&amp#27;[1m"Germany"&amp#27;[0m&amp#27;[36m are displayed&amp#27;[0m &amp#27;[90m# com.automation.steps.HolidaysPageSteps.verify_holidays_of_country_are_displayed(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mfirst two holidays are unchecked&amp#27;[0m                    &amp#27;[90m# com.automation.steps.HolidaysPageSteps.first_two_holidays_are_unchecked()&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289744 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:53:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the first 2 holidays are removed&quot;, &quot;Remove Holidays from the calender&quot;](17)" classname="com.automation.Runner.TestNGRunner" time="9.803">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: 1c4e6c1af206f25894cc96740cf099a6" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 1c4e6c1af206f25894cc96740cf099a6
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Verify the first 2 holidays are removed &amp#27;[90m# src/test/resources/features/RemoveHolidays.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on loginLink&amp#27;[0m                           &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 1c4e6c1af206f25894cc96740cf099a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at âœ½.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/RemoveHolidays.feature:6)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289683 bytes]
+
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user on login page&amp#27;[0m                          &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters email as &amp#27;[0m&amp#27;[36m&amp#27;[1m"userEmail"&amp#27;[0m                   &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on loginBtn&amp#27;[0m                             &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"password"&amp#27;[0m                  &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on continue button&amp#27;[0m                     &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mverify user is on homepage&amp#27;[0m                          &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on availability&amp#27;[0m                        &amp#27;[90m# com.automation.steps.HomeSteps.user_clicks_on_availability()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user is on Availability page&amp#27;[0m                &amp#27;[90m# com.automation.steps.AvailabilityPageSteps.verify_user_is_on_availability_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser click on holidays tab&amp#27;[0m                         &amp#27;[90m# com.automation.steps.AvailabilityPageSteps.user_click_on_holidays_tab()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on change link&amp#27;[0m                               &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_change_link()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify holiday setting is displayed&amp#27;[0m                &amp#27;[90m# com.automation.steps.HolidaysPageSteps.verify_holiday_setting_is_displayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on countries list button&amp#27;[0m               &amp#27;[90m# com.automation.steps.HolidaysPageSteps.user_clicks_on_countries_list_button()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on country &amp#27;[0m&amp#27;[36m&amp#27;[1m"Spain"&amp#27;[0m                           &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_country(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on apply button&amp#27;[0m                              &amp#27;[90m# com.automation.steps.HolidaysPageSteps.clicks_on_apply_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify holidays of country &amp#27;[0m&amp#27;[36m&amp#27;[1m"Spain"&amp#27;[0m&amp#27;[36m are displayed&amp#27;[0m   &amp#27;[90m# com.automation.steps.HolidaysPageSteps.verify_holidays_of_country_are_displayed(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mfirst two holidays are unchecked&amp#27;[0m                    &amp#27;[90m# com.automation.steps.HolidaysPageSteps.first_two_holidays_are_unchecked()&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289615 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:53:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify an event is scheduled&quot;, &quot;Schedule an event/meeting functionality&quot;](18)" classname="com.automation.Runner.TestNGRunner" time="38.977">
+    <system-out><![CDATA[
+Scenario: verify an event is scheduled                                                                &amp#27;[90m# src/test/resources/features/ScheduleEvent.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                                            &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                                       &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                                      &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                                               &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                                         &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                                              &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                                                 &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                                      &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on event of name &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m&amp#27;[32m and duration &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.duration"&amp#27;[0m                  &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnEventOfNameAndDuration(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mswitch the tab&amp#27;[0m                                                                                  &amp#27;[90m# com.automation.steps.HomeSteps.switchTheTab()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user is on event schedule page&amp#27;[0m                                                          &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.verifyUserIsOnEventSchedulePage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser selects date &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.date"&amp#27;[0m                                                         &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.userSelectsDate(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser selects time&amp#27;[0m                                                                               &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.userSelectsTime()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters event name &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.name"&amp#27;[0m&amp#27;[32m email &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.email"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.Msg"&amp#27;[0m &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.userEntersEventNameEmailAnd(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on schedule button&amp#27;[0m                                                                       &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.clicksOnScheduleButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify event is scheduled&amp#27;[0m                                                                      &amp#27;[90m# com.automation.steps.EventSchedulePageSteps.verifyEventIsScheduled()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:54:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;cancel event&quot;, &quot;Schedule an event/meeting functionality&quot;](19)" classname="com.automation.Runner.TestNGRunner" time="59.279">
+    <system-out><![CDATA[
+Scenario: cancel event                                                                               &amp#27;[90m# src/test/resources/features/ScheduleEvent.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                                                           &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on loginLink&amp#27;[0m                                                                      &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify user on login page&amp#27;[0m                                                                     &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser enters email as &amp#27;[0m&amp#27;[32m&amp#27;[1m"userEmail"&amp#27;[0m                                                              &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser clicks on loginBtn&amp#27;[0m                                                                        &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters password as &amp#27;[0m&amp#27;[32m&amp#27;[1m"password"&amp#27;[0m                                                             &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on continue button&amp#27;[0m                                                                &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify user is on homepage&amp#27;[0m                                                                     &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on meetings link&amp#27;[0m                                                                  &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnMeetingsLink()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify meetings page is displayed&amp#27;[0m                                                             &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyMeetingsPageIsDisplayed()&amp#27;[0m
+Passed meeting name: Emergency 1
+Passed event name: E1
+meet: Emergency 1
+event: E1
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mverify meeting is present of name &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.name"&amp#27;[0m&amp#27;[32m and event name &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m          &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyMeetingIsPresentOfNameAndEventName(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on meeting of name &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.name"&amp#27;[0m&amp#27;[32m and event name &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m            &amp#27;[90m# com.automation.steps.MeetingsPageSteps.userClicksOnMeetingOfNameAndEventName(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclicks on cancel button&amp#27;[0m                                                                        &amp#27;[90m# com.automation.steps.MeetingsPageSteps.clicksOnCancelButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify cancel event pop up is displayed&amp#27;[0m                                                       &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyCancelEventPopUpIsDisplayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser clicks on confirmation button&amp#27;[0m                                                            &amp#27;[90m# com.automation.steps.MeetingsPageSteps.userClicksOnConfirmationButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify event is cancelled of meeting name &amp#27;[0m&amp#27;[32m&amp#27;[1m"eventSchedule.name"&amp#27;[0m&amp#27;[32m and event name &amp#27;[0m&amp#27;[32m&amp#27;[1m"newEvent.name"&amp#27;[0m &amp#27;[90m# com.automation.steps.MeetingsPageSteps.verifyEventIsCancelledOfMeetingNameAndEventName(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:54:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the profile image, name and welcome message is updated&quot;, &quot;Update Profile Functionality&quot;](20)" classname="com.automation.Runner.TestNGRunner" time="10.162">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=128.0.2739.54)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -&gt; xpath: //ul[@id=&apos;right-side-components&apos;]//a[contains(@class,&apos;button-link&apos;) and @data-testid=&apos;login-header&apos;]]&#10;Session ID: 179373c6f9c4668a4156b01b2e7e479b" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 179373c6f9c4668a4156b01b2e7e479b
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Verify the profile image, name and welcome message is updated &amp#27;[90m# src/test/resources/features/UpdateProfile.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser opens website&amp#27;[0m                                              &amp#27;[90m# com.automation.steps.LandingSteps.user_opens_website()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31muser clicks on loginLink&amp#27;[0m                                         &amp#27;[90m# com.automation.steps.LandingSteps.userClicksOnLoginLink()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 179373c6f9c4668a4156b01b2e7e479b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.automation.pages.LandingPage.clickOnLoginLink(LandingPage.java:17)
+	at com.automation.steps.LandingSteps.userClicksOnLoginLink(LandingSteps.java:19)
+	at âœ½.user clicks on loginLink(file:///C:/Capstone2/src/test/resources/features/UpdateProfile.feature:6)
+&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289850 bytes]
+
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify user on login page&amp#27;[0m                                        &amp#27;[90m# com.automation.steps.LoginSteps.verify_user_on_login_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters email as &amp#27;[0m&amp#27;[36m&amp#27;[1m"userEmail"&amp#27;[0m                                 &amp#27;[90m# com.automation.steps.LoginSteps.userEntersEmailAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser clicks on loginBtn&amp#27;[0m                                           &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnLoginBtn()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser enters password as &amp#27;[0m&amp#27;[36m&amp#27;[1m"password"&amp#27;[0m                                &amp#27;[90m# com.automation.steps.LoginSteps.userEntersPasswordAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on continue button&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.LoginSteps.userClicksOnContinueButton()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mverify user is on homepage&amp#27;[0m                                        &amp#27;[90m# com.automation.steps.HomeSteps.verifyUserIsOnHomepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on profile icon&amp#27;[0m                                      &amp#27;[90m# com.automation.steps.HomeSteps.userClicksOnProfileIcon()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclicks on profile link&amp#27;[0m                                            &amp#27;[90m# com.automation.steps.HomeSteps.clicksOnProfileLink()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify profile page is displayed&amp#27;[0m                                 &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyProfilePageIsDisplayed()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser selects profile as &amp#27;[0m&amp#27;[36m&amp#27;[1m"cat.profileImg"&amp#27;[0m                         &amp#27;[90m# com.automation.steps.ProfilePageSteps.userSelectsProfileAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser updates name as &amp#27;[0m&amp#27;[36m&amp#27;[1m"updated.name"&amp#27;[0m                               &amp#27;[90m# com.automation.steps.ProfilePageSteps.userUpdatesNameAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser updates welcome message as &amp#27;[0m&amp#27;[36m&amp#27;[1m"updated.msg"&amp#27;[0m                     &amp#27;[90m# com.automation.steps.ProfilePageSteps.userUpdatesWelcomeMessageAs(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser clicks on save changes button&amp#27;[0m                               &amp#27;[90m# com.automation.steps.ProfilePageSteps.userClicksOnSaveChangesButton()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify changes have been saved&amp#27;[0m                                   &amp#27;[90m# com.automation.steps.ProfilePageSteps.verifyChangesHaveBeenSaved()&amp#27;[0m
+
+    Embedding FailedTestSnap [image/png 289701 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Sep 04, 2024 5:55:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 124; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
+  </testcase>
+</testsuite>

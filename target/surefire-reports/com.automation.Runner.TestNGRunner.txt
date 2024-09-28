@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.Runner.TestNGRunner
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 579.958 s <<< FAILURE! - in com.automation.Runner.TestNGRunner
+com.automation.Runner.TestNGRunner.runScenario["verify user can create group event", "Event creation functionality"](3)  Time elapsed: 10.72 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d52f758dc5cc938993b1c5365e468b60, clickElement {id=f.B863966BAB8AE4D1DDE00581D3DCBDA9.d.A7FC6CA859E388C3415C8DE1B77FBD99.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49523}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49523/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d52f758dc5cc938993b1c5365e468b60)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: d52f758dc5cc938993b1c5365e468b60
+
+com.automation.Runner.TestNGRunner.runScenario["verify user can create a routing", "Create Routing Functionality"](5)  Time elapsed: 33.882 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3b7980beece22d66d8a42a6deb325eef, clickElement {id=f.A63E96346D80C7CA55D7E3F0263B7C55.d.0350F0E832ADEABDFD28DFBFA879A7DD.e.248}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50058}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3b7980beece22d66d8a42a6deb325eef)] -> xpath: //div[@data-component='sticky-footer']//button/span[text()='Next']]
+Session ID: 3b7980beece22d66d8a42a6deb325eef
+
+com.automation.Runner.TestNGRunner.runScenario["verify user can logout", "Logout Functionality"](14)  Time elapsed: 35.829 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66fe75ee6ef681c872ab11a70c501f72, isElementDisplayed {id=f.557583D8B4276EE9A7168C27466785A5.d.2D9B684194E0A9AEA89FB4140900C373.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62049}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62049/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (66fe75ee6ef681c872ab11a70c501f72)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 66fe75ee6ef681c872ab11a70c501f72
+
+com.automation.Runner.TestNGRunner.runScenario["verify user can change the profile picture", "Profile Picture upload"](15)  Time elapsed: 11.096 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9aff9b1d8b6fa0ab4fb679213a26b660, clickElement {id=f.D906794AFE4853B3FAE9B3EE05969714.d.1D93382FBA7D83C5B7D7CEC720B6FB56.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53194}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53194/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9aff9b1d8b6fa0ab4fb679213a26b660)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 9aff9b1d8b6fa0ab4fb679213a26b660
+
+com.automation.Runner.TestNGRunner.runScenario["Verify the first 2 holidays are removed", "Remove Holidays from the calender"](16)  Time elapsed: 9.209 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ca48202532864dc2d6068a4762d0525, clickElement {id=f.5D8D867ACA48BD7CC0420684F2533C9E.d.00ECA692F62750F9F77C54D30F0931BB.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53299}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6ca48202532864dc2d6068a4762d0525)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 6ca48202532864dc2d6068a4762d0525
+
+com.automation.Runner.TestNGRunner.runScenario["Verify the first 2 holidays are removed", "Remove Holidays from the calender"](17)  Time elapsed: 9.803 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c4e6c1af206f25894cc96740cf099a6, clickElement {id=f.7FBE22AE8A4284B74F584510E1075505.d.3146E7581139536414D5B4AF9A5FD31E.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53407}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53407/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c4e6c1af206f25894cc96740cf099a6)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 1c4e6c1af206f25894cc96740cf099a6
+
+com.automation.Runner.TestNGRunner.runScenario["Verify the profile image, name and welcome message is updated", "Update Profile Functionality"](20)  Time elapsed: 10.162 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=128.0.2739.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [179373c6f9c4668a4156b01b2e7e479b, clickElement {id=f.929CD1029A2E1504B0B2E51E7CB06BDD.d.BAD09468DCAFE7090FCFB4CCC528D72B.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54346}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\280707\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54346/devtoo..., se:cdpVersion: 128.0.2739.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (179373c6f9c4668a4156b01b2e7e479b)] -> xpath: //ul[@id='right-side-components']//a[contains(@class,'button-link') and @data-testid='login-header']]
+Session ID: 179373c6f9c4668a4156b01b2e7e479b
+
